@@ -40,6 +40,19 @@ public class App {
         utilitario.viaja(250);
         utilitario.viaja(150);
         System.out.println(utilitario);
+
+        Carro suv = new Carro("SUV", TipoCombustivel.FLEX, 8, 55);
+        System.out.println("Tipos de veiculos:");
+        System.out.println(suv);
+
+        System.out.println("\n\n----------------");
+        System.out.println("\nAbastencendo carro SUV com Gasolina");
+        suv.abastece(TipoCombustivel.GASOLINA, 55);
+        System.out.println(suv);
+        System.out.println("\nViajando com o carro SUV");
+        suv.viaja(250);
+        suv.viaja(150);
+        System.out.println(suv);
     
     }
 }
