@@ -21,12 +21,25 @@ public class App {
 
         System.out.println("\n\n----------------");
         System.out.println("\nAbastencendo carro esportivo com gasolina");
-        basico.abastece(TipoCombustivel.GASOLINA, 45);
+        esportivo.abastece(TipoCombustivel.GASOLINA, 45);
         System.out.println(esportivo);
         System.out.println("\nViajando com o carro esportivo");
-        basico.viaja(250);
-        basico.viaja(150);
+        esportivo.viaja(250);
+        esportivo.viaja(150);
         System.out.println(esportivo);
+
+        Carro utilitario = new Carro("Utilitário", TipoCombustivel.DIESEL, 5, 70);
+        System.out.println("Tipos de veiculos:");
+        System.out.println(utilitario);
+
+        System.out.println("\n\n----------------");
+        System.out.println("\nAbastencendo carro utilitário com diesel");
+        utilitario.abastece(TipoCombustivel.DIESEL, 70);
+        System.out.println(utilitario);
+        System.out.println("\nViajando com o carro utilitário");
+        utilitario.viaja(250);
+        utilitario.viaja(150);
+        System.out.println(utilitario);
     
     }
 }
